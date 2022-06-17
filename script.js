@@ -1,7 +1,7 @@
 function calculadora() {
     let operacao = prompt("Selecione o tipo de operação que você deseja realizar\n1 - Soma [+]\n2 - Subtração [-]\n3 - Multiplicação [*]\n4 - Divisão [/]\n5 - Divisão Inteira [%]\n6 - Potenciação [**]")
     operacao = Number(operacao)
-        if  (operacao < 1 || operacao > 6) {
+        if  (!operacao || operacao < 1 || operacao > 6) {
             alert('Digite uma opção válida!')
             calculadora()
         } else {
