@@ -13,40 +13,59 @@ function calculadora() {
     let n1 = prompt('Insira o primeiro número da operação:')
     let n2 = prompt('Insira o segundo número da operação:')
 
+    function novaOperacao() {
+        let opcao = Number(prompt("Deseja fazer outra operação?\n1 - SIM\n2 - NÃO"))
+
+        if (opcao == 1) {
+            calculadora()
+        } else if (opcao == 2) {
+            alert('Até mais!')
+        } else {
+            alert('Digite uma opção válida!')
+            novaOperacao()
+        }
+    }
+
     function soma() {
         n1 = Number(n1)
         n2 = Number(n2)
         alert(`${n1} + ${n2} = ${n1 + n2}`)
+        novaOperacao()
     }
 
     function subtracao() {
         n1 = Number(n1)
         n2 = Number(n2)
         alert(`${n1} - ${n2} = ${n1 - n2}`)
+        novaOperacao()
     }
     
     function multiplicacao() {
         n1 = Number(n1)
         n2 = Number(n2)
         alert(`${n1} * ${n2} = ${n1 * n2}`)
+        novaOperacao()
     }
     
     function divisao() {
         n1 = Number(n1)
         n2 = Number(n2)
         alert(`${n1} / ${n2} = ${n1 / n2}`)
+        novaOperacao()
     }
     
     function divInteira() {
         n1 = Number(n1)
         n2 = Number(n2)
         alert(`${n1} % ${n2} = ${n1 % n2}`)
+        novaOperacao()
     }
     
     function potenciacao() {
         n1 = Number(n1)
         n2 = Number(n2)
         alert(`${n1} ** ${n2} = ${n1 ** n2}`)
+        novaOperacao()
     }
 
     if (operacao == 1) {
