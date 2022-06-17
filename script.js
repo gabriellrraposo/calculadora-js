@@ -67,18 +67,39 @@ function calculadora() {
                 novaOperacao()
             }
 
-            if (operacao == 1) {
-                soma()
-            } else if (operacao == 2) {
-                subtracao()
-            } else if (operacao == 3) {
-                multiplicacao()
-            } else if (operacao == 4) {
-                divisao()
-            } else if (operacao == 5) {
-                divInteira()
-            } else if (operacao == 6) {
-                potenciacao()
+            // if (operacao == 1) {
+            //     soma()
+            // } else if (operacao == 2) {
+            //     subtracao()
+            // } else if (operacao == 3) {
+            //     multiplicacao()
+            // } else if (operacao == 4) {
+            //     divisao()
+            // } else if (operacao == 5) {
+            //     divInteira()
+            // } else if (operacao == 6) {
+            //     potenciacao()
+            // }
+
+            switch (operacao) {
+                case 1:
+                    soma()
+                    break
+                case 2:
+                    subtracao()
+                    break
+                case 3:
+                    multiplicacao()
+                    break
+                case 4:
+                    divisao()
+                    break
+                case 5:
+                    divInteira()
+                    break
+                case 6:
+                    potenciacao()
+                    break
             }
         }
 
